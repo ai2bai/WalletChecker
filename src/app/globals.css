@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Albertus Medium";
+  src: url("/fonts/AlbertusMedium.ttf") format("truetype"); 
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Albertus Medium", sans-serif;
+  cursor: url("/cursor-default.png"), auto;
+  scrollbar-width: thin;
+  scrollbar-color: #b1b762 #000000;
+}
+
+button,
+a,
+[role="button"],
+.clickable {
+  cursor: url("/cursor-pointer.png"), pointer;
+}
+
+.hexagon-shape {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hexagon-shape.nav-tab {
+  width: 200px;
+  height: 50px;
+}
+
+.hexagon-shape.icon {
+  width: 64px;
+  height: 64px;
+}
+
+#contextMenu {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+}
+
+#contextMenu .menu-item {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#contextMenu .menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.wallet-adapter-button-trigger {
+  background-color: #b1b762 !important;
+}
+
+@layer utilities {
+  .modal-enter {
+    animation: modalEnter 0.3s ease-out forwards;
+  }
+
+  .modal-exit {
+    animation: modalExit 0.2s ease-in forwards;
+  }
+
+  @keyframes modalEnter {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  @keyframes modalExit {
+    from {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.95) translateY(10px);
+    }
+  }
+}
+
+
+.opacity-50 {
+  opacity: 0.5;
+}
+.pointer-events-none {
+  pointer-events: none;
+}
