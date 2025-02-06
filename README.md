@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI2B (ai2b) - Web3 & DeFi Analysis Platform
 
-## Getting Started
+![AI2B Banner](/public/hero.png)
 
-First, run the development server:
+> "2B or Not 2B"
 
+AI2B is a comprehensive Web3 and DeFi analysis platform that combines blockchain analytics, financial tools, and educational resources. Our platform provides advanced tools and insights for Web3 research, trading, and learning, all accessible through Solana-based wallet authentication.
+
+## 🌟 Features
+
+### 🔍 Research Hub
+- **Github Checker**: Deep analysis and verification of repositories
+- **Wallet Checker**: Comprehensive blockchain wallet analysis and tracking
+- **Image Checker**: Advanced visual content analysis and verification tools
+
+### 💹 Degen Zone
+- **Trench Radar**: Real-time market movement analysis
+- **KOLS Wallet Tracker**: Monitor key opinion leaders' wallet activities
+- **AgentDeployment**: Automated trading strategies (Coming Soon)
+
+### 💰 Financial Tools
+- **AI Chatbox**: Intelligent trading and analysis assistant
+- **Market Sentiment Index**: Track real-time market sentiment
+- **Social Sentiment Analysis**: Analyze social media trends
+- **Yield Optimizer**: Optimize DeFi yield strategies
+- **Bridge**: Facilitate cross-chain transfers
+- **Airdrop Tracker**: Monitor potential airdrop opportunities
+
+### 📚 Learning Center
+- **User Profiles**: Track personal learning progress
+- **Leaderboards**: Engage with community achievements
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher)
+- Yarn or npm
+- Solana-compatible wallet (e.g., Phantom Wallet)
+- Required API keys (see Environment Variables section)
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/ai2bai/WalletChecker.git
+cd ai2b
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+yarn install
+# or
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Set up environment variables:
+Create a `.env.local` file in the root directory and add the following variables:
+```env
+NEXT_PUBLIC_OPENAI_API_KEY=your_openai_key
+NEXT_PUBLIC_SOLSNIFFER_API_KEY=your_solsniffer_key
+NEXT_PUBLIC_SOLANA_RPC=your_solana_rpc
+SANTIMENT_API_KEY=your_santiment_key
+NEXT_PUBLIC_RPC_URL=your_rpc_url
+NEXT_PUBLIC_SOLSCAN_API_KEY=your_solscan_key
+NEXT_PUBLIC_ZERION_API_KEY=your_zerion_key
+ZERION_EMAIL=your_zerion_email
+ZERION_KEY=your_zerion_key
+NEXT_PUBLIC_TOGETHER_API_KEY=your_together_key
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
+```bash
+yarn dev
+# or
+npm run dev
+```
 
-## Learn More
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-To learn more about Next.js, take a look at the following resources:
+## 🏗️ Built With
+- [Next.js](https://nextjs.org/) - React framework
+- [GPT](https://openai.com/) - AI language model integration
+- [Deepseek](https://deepseek.com/) - AI capabilities
+- [Solana Web3.js](https://solana-labs.github.io/solana-web3.js/) - Blockchain integration
+- Various AI models and APIs for comprehensive analysis
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔒 Authentication
+The platform uses Solana-compatible wallets (like Phantom Wallet) for authentication, ensuring secure access to all features.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
+We welcome contributions to AI2B! Please follow these steps:
 
-## Deploy on Vercel
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📞 Support
+For support, please email us at support@ai2bai.io or open an issue in the GitHub repository.
+
+## ⚠️ Disclaimer
+This platform is for informational purposes only. Always conduct your own research before making any investment decisions.
+
+---
+Made with ❤️ by the AI2B Team
